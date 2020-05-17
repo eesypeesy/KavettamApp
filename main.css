@@ -1,0 +1,113 @@
+
+:root {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  --grey : #333333;
+  --white : #ffffff;
+}
+.dark {
+  --text-primary: #ffffff;
+  --text-secondary: #ececec;
+  --bg-primary: var(--grey);
+  --bg-secondary: #141418;
+}
+body {
+  color: var(--white);
+  background-image: url("./assets/bgMOB2.jpg");
+  max-width: 100%;
+  transition: color 1s ease-in-out;
+}
+/*Navbar*/
+#nav {
+  margin-top: 5%; 
+}
+#menuname {
+  text-align: right;
+  margin-right: 5%;
+}
+#menuitems {
+  display: none;
+}
+#menuname:hover #menuitems {
+  display: block; 
+  list-style-type: none;
+  position: absolute;
+  right: 7%;
+  animation: show .5s ease-in;
+}
+@keyframes show{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#menuitems li {
+  text-align: right;
+  margin-top: 15px;
+}
+#menuitems li a{
+  text-decoration: none;
+  color: var(--text-primary);
+}
+#image{
+  display: block;
+  position: absolute;
+  bottom: -5%;
+  opacity: .8;
+
+  transition: opacity 1s ease;
+}
+.collegeunion{
+  display: block;
+  font-size: .8rem;
+  margin-bottom: 30px;
+}
+.collegeunion #sow{
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: -15px;
+}
+
+#image img{
+  position: absolute;
+  width: 200px;
+  top: -320px;
+}
+#yorum{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 20%;
+  transition: margin-top 1s ease-in-out;
+}
+#yorum #mainhead{
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.footgrid{
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+}
+.footcircle img{
+  width :20px;
+}
+/*Point TABLE*/
+/* .pointTable{
+  margin-top: 100px;
+  text-align: center;
+}
+table {
+  display: inline;
+  border-spacing: 10px;
+}
+table th{
+  border: 1px ;
+  font-size: 700;
+  text-align: left;
+}
+table tr{
+  text-align: center;
+} */

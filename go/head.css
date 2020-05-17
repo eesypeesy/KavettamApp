@@ -1,0 +1,101 @@
+
+
+:root {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  --grey : #333333;
+  --white : #ffffff;
+  }
+.line{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  height: 1px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+body {
+  color: var(--white);
+  background-color: var(--grey);
+  background-image: url("../assets/bgMOB2.jpg");
+  margin: 0;
+  padding: 0;
+
+  transition: background-color .5s ease-in-out;
+}
+
+
+/*Navbar*/
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+#themeButton img {
+  width: 25px;
+  cursor: pointer;
+}
+
+#menuhead {
+  text-align: center;
+  
+}
+
+#menuname {
+  text-align: right;
+}
+#menuitems {
+  display: none;
+
+}
+#menubar:hover #menuitems {
+  display: block;
+  list-style-type: none;
+  position: absolute;
+  right: 5%;
+  margin-top: 0%;
+  animation: show .5s ease-in;
+  text-align: right;
+}
+
+@keyframes show{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+#menuitems li {
+  margin-top: 15px;
+
+}
+#menuitems li a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+/*theme for register.html*/
+input[type="submit"] {
+  color: var(--white);
+  margin-top: 20px;
+
+  background: rgba(214, 214, 214, 0.103);
+  border: 1px solid rgba(196, 176, 1, 0.582);
+
+  cursor: pointer;
+}
+input {
+  background-color: rgba(177, 177, 177, 0.226);
+  color: var(--white);
+  
+}
+#rules a,
+#problems a{
+  color: var(--white);
+}

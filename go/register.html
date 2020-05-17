@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Grup Yorum</title>
+    <link rel="stylesheet" href="./head.css">
+    <link rel="stylesheet" href="./reg/reg.css">
+    
+</head>
+<body>
+  
+    <div id="nav" >
+        <!--include themetoggler, heading, and menu bar-->
+
+        <!--theme toggler-->
+        <div id="themeButton">
+          <img id="themeIcon" 
+          src="../assets/moon.png" 
+          onclick="toggleTheme()">
+        </div>
+
+        <!--heading-->
+        <div id="menuhead">
+          <div id="grup" style="display: inline; font-weight: 900;">GRUP YORUM</div> <br>registration
+        </div>
+
+        <!--menubar-->
+        <div id="menubar">
+            <div id="menuname"> Menu</div>
+            <ul id="menuitems" >
+              <li><a href="../index.html">Home</a> </li>
+              <li><a href="#">Registration</a></li>
+              <li><a href="./events.html">Events</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+<div id="bod">
+    <div id="rules">
+      <div id="rulehead">before registering </div>
+      <ul id="stuff">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum similique minus tempora at delectus esse iste voluptates, exercitationem voluptas accusamus alias quisquam, doloremque in.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione molestias doloremque quo nulla, incidunt sed aliquid nostrum accusantium omnis!</li>
+      </ul>
+    </div>
+
+    
+    <div id="registerForm">
+      <form  id="regform" onsubmit="formSubmit()" >
+
+        <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="Name" 
+        required><br>
+
+        <input 
+        type="text" 
+        name="branch" 
+        id="selectBranch" 
+        placeholder="Department" 
+        autocomplete="off" 
+        onclick="Branch()" 
+        required><br>
+
+        <div id="branchlist">
+          <div id="cs" onclick="checkBranch(id)">Computer</div>
+          <div id="it" onclick="checkBranch(id)">Information</div>
+          <div id="me" onclick="checkBranch(id)">Mechanical</div>
+          <div id="eee" onclick="checkBranch(id)">Electrical</div>
+          <div id="ec" onclick="checkBranch(id)">Electronics </div>
+        </div>
+
+
+        <input type="text" 
+        name="semester" 
+        placeholder="Semester ( S2,S4,S6 or S8)" 
+        autocomplete="off" 
+        required
+        pattern="[Ss2,4,6,8]{2}"
+        title="S2 S4 S6 or S8"
+        onkeyup="this.value = this.value.toUpperCase()"; 
+        maxlength="2"><br>
+        
+        <input 
+        type="text" 
+        name="ktuid" 
+        placeholder="KTU Id" 
+        required 
+        onkeyup="this.value = this.value.toUpperCase()"; 
+        minlength="9"><br>
+
+        <input 
+        type="email" 
+        name="email" 
+        placeholder="Email" 
+        required ><br>
+
+        <input type="text"
+        name="phone" 
+        placeholder="Mobile Number" 
+        required
+        minlength="10"
+        maxlength="10"><br>
+
+        <input 
+        type="text" 
+        name="selectEvent" 
+        id="selectEvent" 
+        placeholder="Select Event" 
+        autocomplete="off" 
+        onclick="Event()" 
+        required><br>
+
+        <div id="eventlist">
+          <br>
+          <div id="eew" onclick="checkEvent(id)">English Essay Writing</div>
+          <div id="mew" onclick="checkEvent(id)">Malayalam Essay Writing</div>
+          <div id="hew" onclick="checkEvent(id)">Hindi Essay Writing</div>
+          <br>
+          <div id="ess" onclick="checkEvent(id)">English Short Story</div>
+          <div id="mss" onclick="checkEvent(id)">Malayalam Short Story </div>
+          <div id="hss" onclick="checkEvent(id)">Hindi Short Story</div>
+          <br>
+          <div id="epw" onclick="checkEvent(id)">English Poem Writing </div>
+          <div id="mpw" onclick="checkEvent(id)">Malayalam Poem Writing</div>
+          <div id="hpw" onclick="checkEvent(id)">Hindi Poem Writing </div>
+          <br>
+           <div id="pcd" onclick="checkEvent(id)">Pencil Drawing</div>
+          <div id="car" onclick="checkEvent(id)">Cartooning </div>
+          <div id="cal" onclick="checkEvent(id)">Calligraphy </div>
+          <br>
+          <div id="oil" onclick="checkEvent(id)">Oil Painting</div>
+          <div id="col" onclick="checkEvent(id)">Water Color Painting </div>
+          <div id="dgp" onclick="checkEvent(id)">Digital Painting</div>
+          <br>
+          <div id="lmv" onclick="checkEvent(id)">Light Music </div>
+          <div id="cmv" onclick="checkEvent(id)">Classical Music</div>
+          <div id="wsv" onclick="checkEvent(id)">Western Vocal </div>
+          <div id="mpv" onclick="checkEvent(id)">Mappilappattu</div>          
+          <br>
+          <div id="cld" onclick="checkEvent(id)">Classical Dance </div>
+          <div id="fkd" onclick="checkEvent(id)">Folk Dance </div>
+          <div id="wsd" onclick="checkEvent(id)">Western Dance </div>
+          <br>
+          <div id="mma" onclick="checkEvent(id)">Mimicry </div>
+          <div id="moa" onclick="checkEvent(id)">Monoact </div>
+        </div>
+
+        <br>
+        
+        <input type="submit" value="register">
+        <div id="regButton">you've already registered for an event</div>
+    
+        <div class="line"></div>
+        <div id="problems">
+          facing problems? <a onclick="sendProblem()">let us know</a>
+        </div>
+      </form>
+    </div>
+  </div>    
+        <!-- The core Firebase JS SDK is always  and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-functions.js"></script>
+    
+    <script src="./firstloader.js" defer></script>
+    <script src="./reg/reg.js" defer></script>
+    <script src="./reg/regfire.js"></script>
+
+
+</body>
+</html>

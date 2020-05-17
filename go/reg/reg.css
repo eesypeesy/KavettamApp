@@ -1,0 +1,88 @@
+
+#bod{
+    position: relative;
+    margin-top: 0;
+
+    transition: margin-top .5s ease;
+}
+#registerForm {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+#registerForm form {
+    display: inline;
+}
+#regButton{
+    display: none;
+    color: rgb(204, 0, 0);
+    font-size: .7rem;
+}
+input {
+    border: none;
+    border-radius: 3px;
+
+    margin-top: 5px;
+    padding-left: 7px;
+    height: 25px;
+}
+::-webkit-input-placeholder{
+    opacity: 1;
+}
+input[name="event"]{
+    margin-top: 30px;
+}
+input[type="button"]{
+    margin-top: 30px;
+}
+
+#idExists,
+#emailExists,
+#mobileExists{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(204, 0, 0);
+    font-size: 14px;
+}
+/*rules*/
+
+#rules{
+    margin-top: 50px;
+}
+#rules #rulehead {
+    font-weight: 700;
+    margin-left: 40px;
+}
+#rules li {
+    font-size: 14px;
+    list-style-type: circle;
+    margin-top: 5px;
+}
+
+/*problems*/
+#problems{
+    font-size: 12px;
+}
+#problems a{
+    text-decoration: underline;
+}
+#branchlist{
+    display: none;
+
+    text-align: center;
+    margin-top: 10px;
+
+}
+#branchlist div{
+    margin-top: 5px;
+
+}
+
+#eventlist{
+    display: none;
+    margin-top: 0px;
+    cursor: pointer;
+}
+#eventlist div{
+    margin-top: 5px;
+}
