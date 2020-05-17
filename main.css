@@ -16,6 +16,8 @@ body {
   background-image: url("./assets/bgMOB2.jpg");
   max-width: 100%;
   transition: color 1s ease-in-out;
+
+  overflow: hidden;
 }
 /*Navbar*/
 #nav {
@@ -69,18 +71,20 @@ body {
   font-weight: 900;
   margin-bottom: -15px;
 }
-
+#image{
+  margin-bottom: 10%;
+}
 #image img{
   position: absolute;
-  width: 200px;
-  top: -320px;
+  width: 150px;
+  bottom: 0;
 }
 #yorum{
   display: block;
   position: relative;
   text-align: center;
   margin-top: 20%;
-  transition: margin-top 1s ease-in-out;
+  transition: margin-top .5s ease-in-out;
 }
 #yorum #mainhead{
   margin-left: 10px;

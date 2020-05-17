@@ -1,21 +1,16 @@
 
 const bar = document.getElementById("menubar");
 const menuName = document.getElementById("menuname");
-const header = document.getElementById("menuhead");
 
 const bottom = document.getElementById("bod");
 
 bar.onmouseover = () => {
-  menuName.style.opacity = ".5";
-  header.style.opacity = ".5";
-
-  bottom.style.marginTop = "40%";
+  menuName.style.opacity = ".1";
+  bottom.style.marginTop = "20%";
 }
 bar.onmouseout = () => {
 
   menuName.style.opacity = "1";
-  header.style.opacity = "1";
-
   bottom.style.marginTop = "0%";
 }
 

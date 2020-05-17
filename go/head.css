@@ -36,16 +36,6 @@ body {
   margin-top: 5%;
   margin-left: 5%;
 }
-#themeButton img {
-  width: 25px;
-  cursor: pointer;
-}
-
-#menuhead {
-  text-align: center;
-  
-}
-
 #menuname {
   text-align: right;
 }
@@ -58,7 +48,7 @@ body {
   list-style-type: none;
   position: absolute;
   right: 5%;
-  margin-top: 0%;
+  margin-top: 0px;
   animation: show .5s ease-in;
   text-align: right;
 }
