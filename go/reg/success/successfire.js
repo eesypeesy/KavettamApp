@@ -22,6 +22,10 @@ async function fetchDat(){
     let status = await getDat(dat)
     .then((result) =>{
         console.log(result);
+    })
+    .catch((err) => {
+        console.log(err);
+        
     });
     console.log(status);
     }
