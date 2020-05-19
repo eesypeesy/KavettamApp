@@ -5,6 +5,7 @@
   font-family: 'Courier New', Courier, monospace;
   --grey : #333333;
   --white : #ffffff;
+  filter: grayscale(1);
   }
 .line{
   margin-top: 20px;
