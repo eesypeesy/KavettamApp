@@ -1,5 +1,4 @@
-
-var firebaseConfig = {
+let firebaseConfig = {
     apiKey: "AIzaSyA1uPTHZVxfYVgE6zAG5BVCQFCe1Qmjatc",
     authDomain: "kavettam-test.firebaseapp.com",
     databaseURL: "https://kavettam-test.firebaseio.com",
@@ -13,16 +12,12 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 let db = firebase.firestore();
 let functions = firebase.functions();
-
 const fillform = document.getElementById("regform");
-
 //Functions
 function handleForm(event) { event.preventDefault(); } 
 fillform.addEventListener('submit', handleForm);
-
 function formSubmit() {
     let regEvent = fillform.selectEvent.value;
-    console.log(regEvent);
     let regTime = new Date().toLocaleString();
     let form = {
         name : fillform.name.value,
@@ -38,18 +33,15 @@ function formSubmit() {
     submit(form)
     .then((result) => {
         console.log(result);
-        
         if(result){
             redirectWithSession();
         }else{
             failedToSubmit();
-        }
-        
-    })
+        }});
 }
 function redirectWithSession() {    
     sessionStorage.setItem("registeredKTUID",fillform.ktuid.value);
-    sessionStorage.setItem("registeredNAME",fillform.name.value);
+    sessionStorage.setItem("registeredEVENT",fillform.selectEvent.value);
     successRegRedirect(true);
 }
 function successRegRedirect(stat) {

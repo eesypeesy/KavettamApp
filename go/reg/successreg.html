@@ -3,18 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registered! | Online Kalotsavam</title>
+    <title>Registered! | Grup Yorum</title>
+    <link rel="stylesheet" href="../head.css">
+    <link rel="stylesheet" href="./success/success.css">
 </head>
 <body>
-    <h2>Whoohoo!!</h2>
-    <h3>You have successfully registered for SFI GECI Online Kalotsavam.</h3>
-    <h4>details</h4>
-    <div id="name"></div>
-    <div id="event"></div>
-    <div id="ktuid"></div>
+    <div id="nav" >
+        <div class="arts">Grup Yorum</div>
+        <!--menubar-->
+        <div id="menubar">
+            <div id="menuname"> Menu</div>
+            <ul id="menuitems" >
+              <li><a href="../../index.html">Home</a> </li>
+              <li><a href="../register.html">Register</a></li>
+              <li><a href="../events.html">Events</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="Sbod">
+        <h3>
+            Registration Successful
+        </h3>
+        <p>Rules,timing and coordinator list of all competitions are available in the <a href="../events.html"">events</a> page</p>
+    </div>
+       <script>
+           
+            const bar = document.getElementById("menubar");
+            const menuName = document.getElementById("menuname");
+            const themeIcon = document.getElementById("themeIcon");
 
-    <button onclick="startthecounting()">runthefunction</button>
-       
+            bar.onmouseover = () => {
+            menuName.style.opacity = ".1";
+            
+            }
+            bar.onmouseout = () => {
+
+            menuName.style.opacity = "1";
+            }
+
+
+       </script>
         <!-- The core Firebase JS SDK is always  and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
 
@@ -22,7 +50,6 @@
             https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-
         <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-functions.js"></script>
     
         <script src="" defer></script>

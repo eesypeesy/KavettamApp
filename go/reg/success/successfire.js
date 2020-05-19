@@ -11,50 +11,15 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
 let functions = firebase.functions();
-let db = firebase.firestore();
-
-/*
-const collection = db.collection("Registrations");
-
-let name = sessionStorage.getItem("registeredNAME");
-let id = sessionStorage.getItem("registeredPID");
-
-console.log(name);
-console.log(id);
-
-collection.doc("pid:" + id + " name:" + name)
-.get()
-.then(function(doc) {
-    if(doc.exists) {
-        d = doc.data();
-        document.getElementById("name").innerHTML = "Name : " + d.name;
-        document.getElementById("event").innerHTML = "Event : " + d.event;
-        document.getElementById("ktuid").innerHTML = "KTU ID : " + d.ktuid;
-    }
-})
-.catch(function(error) {
-    console.log("oops" + error);
-    
-})
-
-
-*/
-
-function startthecounting() {
-    let addNumber = functions.httpsCallable('addNumber');
-addNumber({
-    first : 20,
-    second : 30
-})
-.then(function(result) {
-    let sumObtained = result.data.sumOfTheTwoNumbers;
-    console.log(sumObtained);
-    
-})
-.catch(function(error) {
-    console.log(error);
-    
-});
+let dat = {
+    id : sessionStorage.getItem("registeredKTUID"),
+    event : sessionStorage.getItem("registeredEVENT")
 }
+console.log(dat);
+const getDat = functions.httpsCallable('giveDat');
+let status = getDat(dat)
+.then((result) =>{
+    console.log(result);
+});
+console.log(status);
