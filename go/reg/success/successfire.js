@@ -17,9 +17,11 @@ let dat = {
     event : sessionStorage.getItem("registeredEVENT")
 }
 console.log(dat);
-const getDat = functions.httpsCallable('giveDat');
-let status = getDat(dat)
-.then((result) =>{
-    console.log(result);
-});
-console.log(status);
+async function fetchDat(){
+    const getDat = functions.httpsCallable('giveDat');
+    let status = await getDat(dat)
+    .then((result) =>{
+        console.log(result);
+    });
+    console.log(status);
+    }
