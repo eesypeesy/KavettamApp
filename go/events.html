@@ -5,28 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | SFI GECI Online Kalotsavam</title>
     <link rel="stylesheet" href="./head.css">
+    <link rel="stylesheet" href="./event/event.css">
     
 </head>
 <body>
-
     <script src="./bar.js" defer></script>
-
     <div id="nav" >
-        <!--include themetoggler, heading, and menu bar-->
-
-        <!--theme toggler-->
-        <!-- <div id="themeButton">
-          <img id="themeIcon" 
-          src="../assets/moon.png" 
-          onclick="toggleTheme()">
-        </div> -->
-
-        <!--heading-->
         <div id="menuhead">
           EVENTS <br>Grup Yorum
         </div>
-
-        <!--menubar-->
         <div id="menubar">
             <div id="menuname"> Menu</div>
             <ul id="menuitems" >
@@ -34,7 +21,358 @@
               <li><a href="./register.html">Registration</a></li>
             </ul>
         </div>
-
+    </div>
+    <div class="line"></div>
+    <div class="help">click any of the below categories to see the list of events, rules and coordinators</div>
+    <div class="eventBody">
+      <!-- LITERATURE -->
+      <h4 onclick="show('literature')">LITERATURE</h4>
+      <div class="eventlist" id="literature" style="display: none;">
+        <ul id="eventName">
+          <li>Essay Writing (Mal,Eng,Hin)</li>
+          <div class="rulesButton" onclick="ruleIt('essay')">details for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+          </div>
+        <div class="rules" id="essay" style="display: none;">
+          <ul>
+            <li>The language of the competition shall be strictly used.</li>
+            <li>The topic will be given on the spot. </li>
+            <li>Maximum word limit is  350.       </li>
+            <li>Entries should be in Pdf format along with the chest number. </li>
+            <li>Judgment will most likely be based on the qualities like the development of the theme, composition, Tone,
+              appropriateness of style, correctness of language, originality and general impression. </li>
+            <li>Maximum time allowed is Two  hour. Entry should be sent on time.  Late entries won't be considered. </li>
+          </ul>
+        </div>
+          <li>Short Story Writing (Mal,Eng,Hin)</li>
+          <div class="rulesButton" onclick="ruleIt('short')">details for short story writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="short" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+          <li>Poem Writing (Mal,Eng,Hin)</li>
+          <div class="rulesButton" onclick="ruleIt('poem')">details for poem writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="poem" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+        </ul>
       </div>
+
+      <!-- Drawing -->
+      <h4 onclick="show('drawing')">DRAWING</h4>
+      <div class="eventlist" id="drawing" style="display: none;">
+        <ul id="eventName">
+          <li>Pencil Drawing</li>
+          <div class="rulesButton" onclick="ruleIt('pencil')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="pencil" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+          <li>Cartooning</li>
+          <div class="rulesButton" onclick="ruleIt('cartoon')">rules for short story writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="cartoon" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+          <li>Oil Painting</li>
+          <div class="rulesButton" onclick="ruleIt('oil')">rules for poem writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="oil" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Water Color</li>
+          <div class="rulesButton" onclick="ruleIt('water')">rules for short story writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="water" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Digital</li>
+          <div class="rulesButton" onclick="ruleIt('digital')">rules for short story writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="digital" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Calligraphy</li>
+          <div class="rulesButton" onclick="ruleIt('calli')">rules for short story writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="calli" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Pen Tattooing</li>
+          <div class="rulesButton" onclick="ruleIt('tattoo')">rules for short story writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="tattoo" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+        </ul>
+      </div>
+
+      <!-- Dance -->
+      <h4 onclick="show('dance')">DANCE</h4>
+      <div class="eventlist" id="dance" style="display: none;">
+        <ul id="eventName">
+          <li>Classical Dance</li>
+          <div class="rulesButton" onclick="ruleIt('classicaldance')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="classicaldance" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Folk Dance</li>
+          <div class="rulesButton" onclick="ruleIt('folk')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="folk" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Western Dance</li>
+          <div class="rulesButton" onclick="ruleIt('westerndance')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="westerndance" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Musical -->
+      <h4 onclick="show('musical')">MUSICAL</h4>
+      <div class="eventlist" id="musical" style="display: none;">
+        <ul id="eventName">
+          <li>Light Music</li>
+          <div class="rulesButton" onclick="ruleIt('light')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="light" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+        <li>Classical Music</li>
+          <div class="rulesButton" onclick="ruleIt('classicalmusic')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="classicalmusic" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+        <li>Western Vocal</li>
+          <div class="rulesButton" onclick="ruleIt('western')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="western" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+        <li>Mappilappattu</li>
+          <div class="rulesButton" onclick="ruleIt('maappila')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="maappila" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Drama -->
+      <h4 onclick="show('drama')">DRAMA</h4>
+      <div class="eventlist" id="drama"style="display: none;">
+        <ul id="eventName">
+          <li>Monoact</li>
+          <div class="rulesButton" onclick="ruleIt('monoact')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="monoact" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+
+        <li>Mimicry</li>
+          <div class="rulesButton" onclick="ruleIt('mimicry')">rules for essay writing
+            <div id="arrow">
+              <div id="line1"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+            </div>
+        </div>
+        <div class="rules" id="mimicry" style="display: none;">
+          <ul>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+    <script src="./event/checks.js"></script>
 </body>
 </html>

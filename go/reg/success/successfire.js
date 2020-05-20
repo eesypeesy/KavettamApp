@@ -1,4 +1,4 @@
-var firebaseConfig = {
+let firebaseConfig = {
     apiKey: "AIzaSyA1uPTHZVxfYVgE6zAG5BVCQFCe1Qmjatc",
     authDomain: "kavettam-test.firebaseapp.com",
     databaseURL: "https://kavettam-test.firebaseio.com",
@@ -19,13 +19,14 @@ let dat = {
 console.log(dat);
 async function fetchDat(){
     const getDat = functions.httpsCallable('giveDat');
-    let status = await getDat(dat)
+    getDat(dat)
     .then((result) =>{
         console.log(result);
+        console.log(result.data.name);
+        
     })
     .catch((err) => {
-        console.log(err);
-        
+        console.log(err); 
     });
-    console.log(status);
-    }
+    
+}
