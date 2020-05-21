@@ -14,8 +14,8 @@ function hideRules(id) {
 }
 function show(part){
     if(document.getElementById(part).style.display == "none") {
-        document.getElementById(part).style.transition = "display 1s ease";
         document.getElementById(part).style.display = "block"; 
+        document.getElementById("helpMe").style.display = "none";
     }else{
         document.getElementById(part).style.display = "none";
     }

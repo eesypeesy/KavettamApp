@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="line"></div>
-    <div class="help">click any of the below categories to see the list of events, rules and coordinators</div>
+    <div class="help" id="helpMe">click any of the below categories to see the list of events, rules and coordinators</div>
     <div class="eventBody">
       <!-- LITERATURE -->
       <h4 onclick="show('literature')">LITERATURE</h4>
@@ -58,10 +58,14 @@
         </div>
         <div class="rules" id="short" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The story should be based on the topic and should be your own creation.</li>
+            <li>The story is to be completed within 2 hrs and sent to the given number.</li>
+            <li>The story should be in pdf format. (Name_Branch_Chessno. pdf)</li>
+            <li>Maximum word limit is 250.</li>
+            <li>All the pages should contain the exact page no and chess no. Won't be considered for evaluation otherwise.</li>
+            <li>Judgment will be based on qualities like delineation of character, plot construction, theme, diction,
+              correctness, style of language and, general impression.</li>
+            <li>Decision of judges will be final.</li>
           </ul>
         </div>
           <li>Poem Writing (Mal,Eng,Hin)</li>
@@ -74,10 +78,13 @@
         </div>
         <div class="rules" id="poem" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The topic will be given on the spot.</li>
+            <li>Maximum time allowed for writing the Poetry is two hour.Entries will not be accepted after the given time</li>
+            <li>Entries should be in pdf format</li>
+            <li>The language of the competition shall be strictly used.</li>
+            <li> Judgment will be based on qualities like theme development, diction, imagery, emotion, appropriate use of
+              language, general impression etc.</li>
+            <li>The poem shall be original and not borrowed or copied from others.</li>
           </ul>
         </div>
         </ul>
@@ -88,7 +95,7 @@
       <div class="eventlist" id="drawing" style="display: none;">
         <ul id="eventName">
           <li>Pencil Drawing</li>
-          <div class="rulesButton" onclick="ruleIt('pencil')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('pencil')">rules for pencil drawing
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -97,15 +104,20 @@
         </div>
         <div class="rules" id="pencil" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The drawing should be based on the theme and the drawing must be your own creation. </li>
+            <li>Maximum time allotted for the drawing is 2 hrs. </li>
+            <li>Drawing should be done on an A4 paper.</li>
+            <li>Theme will be given on spot through group. </li>
+            <li>No entries will be taken after the time exceeds. </li>
+            <li>Photo of drawing should be sent to coordinators without any editings.</li>
+            <li>Judgement will be based
+              on perfection, neatness, theme development and general impressions.</li>
+            <li>Decision of judges will be final.</li>
           </ul>
         </div>
 
           <li>Cartooning</li>
-          <div class="rulesButton" onclick="ruleIt('cartoon')">rules for short story writing
+          <div class="rulesButton" onclick="ruleIt('cartoon')">rules for Cartooning
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -114,15 +126,16 @@
         </div>
         <div class="rules" id="cartoon" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The cartoon should be based on the topic.</li>
+            <li>The topic will given on the spot</li>
+            <li>Should be your own creation.</li>
+            <li>Should be your own creation.</li>
+            <li>The decision of the judges will be final.</li>
           </ul>
         </div>
 
           <li>Oil Painting</li>
-          <div class="rulesButton" onclick="ruleIt('oil')">rules for poem writing
+          <div class="rulesButton" onclick="ruleIt('oil')">rules for Oil Painting
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -131,15 +144,18 @@
         </div>
         <div class="rules" id="oil" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The topic will be given at the time of competition. </li>
+            <li>The duration is for 2 hours.</li>
+            <li>The participants should be ready with the canvas,paints ,brushes and the materials before the starting time</li>
+            <li>Completed drawings should be submitted before the time limit in pdf format.</li>
+            <li>Judgement will be based on how the theme is executed and overall perfection of the work.</li>
+            <li>Any kind of malpractices such as editing will lead to the disqualification of the participant.</li>
+            <li>The results made by the judges will be final.</li>
           </ul>
         </div>
 
         <li>Water Color</li>
-          <div class="rulesButton" onclick="ruleIt('water')">rules for short story writing
+          <div class="rulesButton" onclick="ruleIt('water')">rules for Water Color
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -148,15 +164,18 @@
         </div>
         <div class="rules" id="water" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The topic will be given at the time of competition .</li>
+            <li>The duration is for 2 hours.</li>
+            <li>The participants should be ready with the necessary materials before the starting time.</li>
+            <li>Completed drawings should be submitted before the time limit in pdf format.</li>
+            <li>Judgement will be based on creativity, innovation and design.</li>
+            <li>Any kind of malpractices such as editing will lead to the disqualification of the participant work.</li>
+            <li>Decision of the judges will be final and binding.</li>
           </ul>
         </div>
 
         <li>Digital</li>
-          <div class="rulesButton" onclick="ruleIt('digital')">rules for short story writing
+          <div class="rulesButton" onclick="ruleIt('digital')">rules for Digital Drawing
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -165,15 +184,15 @@
         </div>
         <div class="rules" id="digital" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The topic will be given on spot.</li>
+            <li>The duration of the event will be 2  hours. No entries will be taken after time exceeds</li>
+            <li>The image shloud be 1200 * 1600, and should be less than 10mb and should be in pdf format.</li>
+            <li>Judgement will be based on how the theme is executed and overall perfection of the work.</li>
           </ul>
         </div>
 
         <li>Calligraphy</li>
-          <div class="rulesButton" onclick="ruleIt('calli')">rules for short story writing
+          <div class="rulesButton" onclick="ruleIt('calli')">rules for Calligraphy
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -190,7 +209,7 @@
         </div>
 
         <li>Pen Tattooing</li>
-          <div class="rulesButton" onclick="ruleIt('tattoo')">rules for short story writing
+          <div class="rulesButton" onclick="ruleIt('tattoo')">rules for Pen Tattooing
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -213,7 +232,7 @@
       <div class="eventlist" id="dance" style="display: none;">
         <ul id="eventName">
           <li>Classical Dance</li>
-          <div class="rulesButton" onclick="ruleIt('classicaldance')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('classicaldance')">rules for Classical Dance
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -222,15 +241,28 @@
         </div>
         <div class="rules" id="classicaldance" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-          </ul>
+            <li>Any form of classical dance(bharathanatyam, mohiniyattam, kuchipudi, keralanadanam)are allowed.</li>
+            <li>The competition will be common for both men and women.</li>
+            <li>No cinema songs are allowed .</li>
+            <li>Semiclassical forms are not allowed.</li>
+            <li>Judgement will be based on the qualities like tal, technique, rythm, abhinaya or expression, footwork and overall impression.</li>
+            <li>Costumes won't get extra points.</li>
+            <li>Every participant should join in the Telegram group, the link of the group will be 
+              shared through either the registered email id or phone number.</li>
+              <li>The chest number of each item will be provided through the Telegram group.</li>
+              <li>Candidate should submit the video of your performance with clear audio.</li>
+              <li>Candidate should conclude the performance within 6min and the perfomances with 
+                duration of more than 6 mints will be disqualified.(minimum time is 4min)</li>
+              <li>Candidates should pin the chest number to the costume where it is clearly visible</li>
+              <li>Candidate should take their chest number half an hour before event starts.</li>
+              <li>Prerecorded videos are not allowed.</li>
+              <li>Candidates should perform in front of a clear background.</li>
+              <li>Candidates should to make sure about their video quality. Technical issues from the your end can't be presidented..</li>
+            </ul>
         </div>
 
         <li>Folk Dance</li>
-          <div class="rulesButton" onclick="ruleIt('folk')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('folk')">rules for Folk Dance
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -239,15 +271,17 @@
         </div>
         <div class="rules" id="folk" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The dance can be either primitive or a folk dance but not a classical one.</li>
+            <li>Film folk songs are not allowed.</li>
+            <li>Duration of dance should not be more than 5 minute.</li>
+            <li>Judgement will be based on the basis of Rythm, Formation, Expressions and overall effect.</li>
+            <li>Video should have minimum clarity and noises should be avoided.</li>
+            <li>Other editings are not allowed.</li>
           </ul>
         </div>
 
         <li>Western Dance</li>
-          <div class="rulesButton" onclick="ruleIt('westerndance')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('westerndance')">rules for Western Dance
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -256,11 +290,23 @@
         </div>
         <div class="rules" id="westerndance" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-          </ul>
+            <li>The competition will be common for both men and women.</li>
+            <li>No cinema songs are allowed .</li>
+            <li>The original track of the song should be western (remixes without Indian classical instruments are permitted</li>
+            <li>Judgment will be based on the basis of Rhythm, Formation, Expression, and Overall effect.</li>
+            <li>Costumes won't get extra points.</li>
+            <li>Every participant should join in the Telegram group, the link of the group will be 
+              shared through either the registered email id or phone number.</li>
+              <li>The chest number of each item will be provided through the Telegram group.</li>
+              <li>Candidate should submit the video of your performance with clear audio.</li>
+              <li>Candidate should conclude the performance within 6min and the perfomances with 
+                duration of more than 6 mints will be disqualified.(minimum time is 4min)</li>
+              <li>Candidates should pin the chest number to the costume where it is clearly visible</li>
+              <li>Candidate should take their chest number half an hour before event starts.</li>
+              <li>Prerecorded videos are not allowed.</li>
+              <li>Candidates should perform in front of a clear background.</li>
+              <li>Candidates should to make sure about their video quality. Technical issues from the your end can't be presidented..</li>
+            </ul>
         </div>
       </div>
 
@@ -268,8 +314,8 @@
       <h4 onclick="show('musical')">MUSICAL</h4>
       <div class="eventlist" id="musical" style="display: none;">
         <ul id="eventName">
-          <li>Light Music</li>
-          <div class="rulesButton" onclick="ruleIt('light')">rules for essay writing
+          <li>Light Music (Male/Female)</li>
+          <div class="rulesButton" onclick="ruleIt('light')">rules for Light Music
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -278,14 +324,18 @@
         </div>
         <div class="rules" id="light" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Competitions are held seperatly for men & women.</li>
+            <li>Only Non-films folk songs/Geetha/Gazal/Bhajan,Snabed and Abhangas cab be presented.</li>
+            <li>Duration of video should not be less than 2 mts & and more than 5 min</li>
+            <li>Candidates should pin a Chest number with good visibility.</li>
+            <li>Candidates should take their chest number half an hour before the event starts and also be in online.</li>
+            <li>Judgement will be made on the qualities like Swara,Tal,Composition,General impression.</li>
+            <li>Video should be a good quality and noices should be avoided. </li>
+            <li>Editings are not allowed.</li>
           </ul>
         </div>
-        <li>Classical Music</li>
-          <div class="rulesButton" onclick="ruleIt('classicalmusic')">rules for essay writing
+        <li>Classical Music (Male/Female)</li>
+          <div class="rulesButton" onclick="ruleIt('classicalmusic')">rules for Classical Music
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -294,14 +344,17 @@
         </div>
         <div class="rules" id="classicalmusic" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Competitions are held seperatly for men & women.</li>
+            <li>Item can be presented either in Hindustani or Karnatik style.</li>
+            <li>Maximum time permitted for the item is ten (10) minutes.</li>
+            <li>Cinema songs are not allowed under this item.</li>
+            <li>Sufficient thought and care must be exercised in the choice of raga and composition.( No sound modulation allowed).</li>
+            <li>Judgment will be based on the qualities like Swara, Tal, selection of Raga, composition and general impression.</li>
+            <li>Competitions are held separately for men and women participants</li>
           </ul>
         </div>
         <li>Western Vocal</li>
-          <div class="rulesButton" onclick="ruleIt('western')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('western')">rules for Western Vocal
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -310,14 +363,17 @@
         </div>
         <div class="rules" id="western" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li> The competition is common to men and women participants</li>
+            <li>The No. of accompanists allowed is one.</li>
+            <li>Time allotted for item is not more than 5 minutes.</li>
+            <li>Language of the song shall be only English.</li>
+            <li>Judgment will be made on the qualities like composition, rhythm, co- ordination and general impression.</li>
+            <li>Video should have minimum clarity and noices should be avoided.</li>
+            <li>Other editing are not allowed.</li>
           </ul>
         </div>
         <li>Mappilappattu</li>
-          <div class="rulesButton" onclick="ruleIt('maappila')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('maappila')">rules for Mappilappattu
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -326,10 +382,13 @@
         </div>
         <div class="rules" id="maappila" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>The competition is common to both men and women participants.</li>
+            <li>Candidates should record a video of your performance with the alloted chess number and pre-recorded videos are not allowed.</li>
+            <li>Maximum alloted time for this event is 3 minutes.</li>
+            <li>Evaluation will be based on sruthilayam and rythm, bhavam, language and literacy clarity.</li>
+            <li>Film songs are not allowed for the competition.</li>
+            <li>Entries will not be accepted after the given extra time.</li>
+            <li>The decision of the judges will be final.</li>
           </ul>
         </div>
       </div>
@@ -339,7 +398,7 @@
       <div class="eventlist" id="drama"style="display: none;">
         <ul id="eventName">
           <li>Monoact</li>
-          <div class="rulesButton" onclick="ruleIt('monoact')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('monoact')">rules for Monoact
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -348,15 +407,16 @@
         </div>
         <div class="rules" id="monoact" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Each student artist shall be given of maximum of 5 minutes.</li>
+            <li>Participant can choose any kind of theme.</li>
+            <li>Judgment will be based on qualities like ability to act, clarity of language, literary expression, originality, humor, general impression etc.</li>
+            <li>Video should have minimum quality.</li>
+            <li>Editings are not allowed.</li>
           </ul>
         </div>
 
         <li>Mimicry</li>
-          <div class="rulesButton" onclick="ruleIt('mimicry')">rules for essay writing
+          <div class="rulesButton" onclick="ruleIt('mimicry')">rules for Mimicry
             <div id="arrow">
               <div id="line1"></div>
               <div id="line2"></div>
@@ -365,10 +425,12 @@
         </div>
         <div class="rules" id="mimicry" style="display: none;">
           <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, itaque.</li>
+            <li>Each student artist shall be given of maximum of 5 minutes.</li>
+            <li>Participant may mimic any kind of sound.</li>
+            <li>Judgement will be based on command of voice,immitative ability, orginality, humour, creativity of presentation.</li>
+            <li>The performance should necessarily be cultured and pleasant piece of art.</li>
+            <li>The video should have minimum quality.</li>
+            <li>Editings are not allowed.</li>
           </ul>
         </div>
       </div>
