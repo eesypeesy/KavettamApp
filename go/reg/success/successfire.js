@@ -16,6 +16,7 @@ let dat = {
     id : sessionStorage.getItem("registeredKTUID"),
     event : sessionStorage.getItem("registeredEVENT")
 }
+let email = localStorage.getItem("email");
 console.log(dat);
 async function fetchDat(){
     const getDat = functions.httpsCallable('giveDat');
@@ -30,3 +31,5 @@ async function fetchDat(){
     });
     
 }
+document.getElementById("confirmed").innerHTML = "a confirmation email has been to send to " + email;
+localStorage.clear();

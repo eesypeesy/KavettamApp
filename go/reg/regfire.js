@@ -39,7 +39,8 @@ function formSubmit() {
             failedToSubmit();
         }});
 }
-function redirectWithSession() {    
+async function redirectWithSession() {    
+    localStorage.setItem("email",fillform.email.value);
     sessionStorage.setItem("registeredKTUID",fillform.ktuid.value);
     sessionStorage.setItem("registeredEVENT",fillform.selectEvent.value);
     successRegRedirect(true);
