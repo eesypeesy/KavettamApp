@@ -17,6 +17,7 @@ const fillform = document.getElementById("regform");
 function handleForm(event) { event.preventDefault(); } 
 fillform.addEventListener('submit', handleForm);
 function formSubmit() {
+    document.getElementById("registerMe").value = "...";
     let regEvent = fillform.selectEvent.value;
     let regTime = new Date().toLocaleString();
     let form = {
