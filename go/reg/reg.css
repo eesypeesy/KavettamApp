@@ -87,3 +87,13 @@ input[type="button"]{
 #eventlist div{
     margin-top: 5px;
 }
+.headname{
+    text-align: center;
+    font-weight: 900;
+}
+.smallline{
+    height: 1px;
+    width: 100%;
+    background: transparent;
+    border: .1px dashed white;
+}

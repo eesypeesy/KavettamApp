@@ -25,10 +25,10 @@
     </div>
     <div id="bod">
         <div id="rules">
-          <div id="rulehead">Rules </div>
+          <div id="rulehead">Before Registering... </div>
           <ul id="stuff">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum similique minus tempora at delectus esse iste voluptates, exercitationem voluptas accusamus alias quisquam, doloremque in.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione molestias doloremque quo nulla, incidunt sed aliquid nostrum accusantium omnis!</li>
+            <li>Read the event rules before registering. It is available at the events page.</li>
+            <li>Make sure you enter the correct details. We will be giving certificates based on the information entered here. If you enter wrong details(like incorrect ktuid), it can't be changed later.</li>
           </ul>
         </div>
         <div id="registerForm">
@@ -91,9 +91,13 @@
             required><br>
             <div id="eventlist">
               <br>
+              <div class="headname" onclick="display('liter')">Literature</div>
+              <div id="liter" style="display: none;">
+                <div class="smallline"></div>
               <div id="eew" onclick="checkEvent(id)">English Essay Writing</div>
               <div id="mew" onclick="checkEvent(id)">Malayalam Essay Writing</div>
               <div id="hew" onclick="checkEvent(id)">Hindi Essay Writing</div>
+
               <br>
               <div id="ess" onclick="checkEvent(id)">English Short Story</div>
               <div id="mss" onclick="checkEvent(id)">Malayalam Short Story </div>
@@ -102,7 +106,12 @@
               <div id="epw" onclick="checkEvent(id)">English Poem Writing </div>
               <div id="mpw" onclick="checkEvent(id)">Malayalam Poem Writing</div>
               <div id="hpw" onclick="checkEvent(id)">Hindi Poem Writing </div>
+              <div class="smallline"></div>
+            </div>
               <br>
+              <div class="headname" onclick="display('drawing')">Drawing</div>
+              <div id="drawing" style="display: none;">
+              <div class="smallline"></div>
               <div id="pcd" onclick="checkEvent(id)">Pencil Drawing</div>
               <div id="car" onclick="checkEvent(id)">Cartooning </div>
               <div id="cal" onclick="checkEvent(id)">Calligraphy </div>
@@ -110,19 +119,37 @@
               <div id="oil" onclick="checkEvent(id)">Oil Painting</div>
               <div id="col" onclick="checkEvent(id)">Water Color Painting </div>
               <div id="dgp" onclick="checkEvent(id)">Digital Painting</div>
+              <div id="pt" onclick="checkEvent(id)">Pen Tattooing</div>
+              <div class="smallline"></div>
+            </div>
               <br>
+              <div class="headname" onclick="display('vocal')">Musical</div>
+              <div id="vocal" style="display: none;">
+              <div class="smallline"></div>
               <div id="lmv" onclick="checkEvent(id)">Light Music </div>
               <div id="cmv" onclick="checkEvent(id)">Classical Music</div>
               <div id="wsv" onclick="checkEvent(id)">Western Vocal </div>
-              <div id="mpv" onclick="checkEvent(id)">Mappilappattu</div>          
+              <div id="mpv" onclick="checkEvent(id)">Mappilappattu</div>
+              <div class="smallline"></div>
+            </div>          
               <br>
+              <div class="headname"  onclick="display('dance')">Dance</div>
+              <div id="dance" style="display: none;">
+              <div class="smallline"></div>
               <div id="cld" onclick="checkEvent(id)">Classical Dance </div>
               <div id="fkd" onclick="checkEvent(id)">Folk Dance </div>
               <div id="wsd" onclick="checkEvent(id)">Western Dance </div>
+              <div class="smallline"></div>
+            </div>
               <br>
+              <div class="headname"  onclick="display('drama')">Drama</div>
+              <div id="drama" style="display: none;">
+              <div class="smallline"></div>
               <div id="mma" onclick="checkEvent(id)">Mimicry </div>
               <div id="moa" onclick="checkEvent(id)">Monoact </div>
+              <div class="smallline"></div>
             </div>
+          </div>
             <br> 
             <input type="submit" value="register">
             <div id="regButton">you've already registered for an event</div>
@@ -133,6 +160,7 @@
           </form>
         </div>
       </div>    
+      <noscript>javascript aint turned on. athonnu on aakk</noscript>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>

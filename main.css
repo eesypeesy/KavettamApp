@@ -112,20 +112,11 @@ body {
   font-size: 1rem;
   display: block;
 }
-/*Point TABLE*/
-/* .pointTable{
-  margin-top: 100px;
-  text-align: center;
+@media(min-width:700px){
+  #image{
+    display: none;
+  }
+  #yorum{
+    margin-top: 10%;
+  }
 }
-table {
-  display: inline;
-  border-spacing: 10px;
-}
-table th{
-  border: 1px ;
-  font-size: 700;
-  text-align: left;
-}
-table tr{
-  text-align: center;
-} */

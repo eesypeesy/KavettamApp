@@ -28,4 +28,10 @@ function sendProblem() {
   let b = document.getElementById(a).innerHTML;
   document.getElementById("selectEvent").value = b;
   document.getElementById("eventlist").style.display = "none";
+}function display(idname) {
+  if(document.getElementById(idname).style.display =="none"){
+    document.getElementById(idname).style.display = "block";
+  }else{
+    document.getElementById(idname).style.display ="none";
+  }
 }
