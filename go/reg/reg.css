@@ -5,104 +5,11 @@
 
     transition: margin-top .5s ease;
 }
-#registerForm {
-    text-align: center;
-    margin-top: 50px;
-    margin-left: -10px;
-}
-#registerForm form {
-    display: inline;
-}
-#regButton{
-    display: none;
-    color: rgb(204, 0, 0);
-    font-size: .7rem;
-}
-input {
-    border: none;
-    border-radius: 3px;
-
-    margin-top: 5px;
-    padding-left: 7px;
-    height: 25px;
-}
-::-webkit-input-placeholder{
-    opacity: 1;
-}
-input[name="event"]{
-    margin-top: 30px;
-}
-input[type="button"]{
-    margin-top: 30px;
-}
-
-#idExists,
-#emailExists,
-#mobileExists{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: rgb(204, 0, 0);
-    font-size: 14px;
-}
-/*rules*/
-
 #rules{
     margin-top: 50px;
 }
 #rules #rulehead {
     font-weight: 700;
-    margin-left: 40px;
-}
-#rules li {
-    font-size: 14px;
-    list-style-type: circle;
-    margin-top: 5px;
-}
-
-/*problems*/
-#problems{
-    font-size: 12px;
-}
-#problems a{
-    text-decoration: underline;
-    cursor: pointer;
-}
-#branchlist{
-    display: none;
-
+    margin-top: 150px;
     text-align: center;
-    margin-top: 10px;
-
-}
-#branchlist div{
-    margin-top: 5px;
-
-}
-
-#eventlist{
-    display: none;
-    margin-top: 0px;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-.headname{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-#eventlist div{
-    margin-top: 5px;
-}
-.headname{
-    text-align: center;
-    font-weight: 900;
-}
-.smallline{
-    height: 1px;
-    width: 100%;
-    background: transparent;
-    border: .1px dashed white;
 }
